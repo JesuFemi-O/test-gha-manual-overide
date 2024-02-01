@@ -13,7 +13,7 @@ jobs:
         steps:
         - name: Hello Step
           run: |
-            if [ "${{ github.event.inputs.file-paths }}" != "" ]; then
+            if [ "${{ github.event.inputs.name }}" != "" ]; then
                 echo "Hello ${{ github.event.inputs.name }}"
             else
                 echo "Hello World!!"
